@@ -18,3 +18,6 @@ configs. Everything is plain in the Dockerfile, except some minor tweaks needed 
 
 If you just want to skip the tedius configs and get your hands on a working minimal Openstack controller, then 
 this is the image for you.
+
+
+who would read this ..
