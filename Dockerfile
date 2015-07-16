@@ -2,8 +2,8 @@ from ubuntu:14.04
 
 MAINTAINER jimlai Jim.Lai@qcttw.com.tw
 
-ENV http_proxy="http://192.168.89.200:3128"
-ENV https_proxy="https://192.168.89.200:3128"
+#ENV http_proxy="http://192.168.89.200:3128"
+#ENV https_proxy="https://192.168.89.200:3128"
 ENV RABBIT_USER=openstack
 ENV RABBIT_PASS=123
 ENV MYSQL_PASS=123
@@ -69,7 +69,6 @@ RUN echo $(head -1 /etc/hosts | cut -f1) $HOSTNAME >> /etc/hosts && \
     keystone-manage db_sync
 
 # config apache
-#RUN sed -i "$ a\ServerName $HOSTNAME" /etc/apache2/apache2.conf
 RUN echo "ServerName $HOSTNAME" >> /etc/apache2/apache2.conf
 RUN nl=$'\n' && echo " \
 Listen 5000 $nl \
