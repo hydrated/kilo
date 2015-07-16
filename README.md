@@ -13,7 +13,7 @@ Definitely NOT to be used in production due to little password protection.
 
 At the time of development, I had not known that one may do automated builds using git repository, so I spent
 quite amount of efforts absorbing all the config files into Dockerfile. But since almost everything is just a 
-direct copy from official guide, it may be more flavorable this way since one doesn't need to worry about hidden
+direct copy from official guide, it may be more favorable this way since one doesn't need to worry about hidden
 configs. Everything is plain in the Dockerfile, except some minor tweaks needed for automation.
 
 If you just want to skip the tedius configs and get your hands on a working minimal Openstack controller, then 
